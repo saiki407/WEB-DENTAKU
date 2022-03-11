@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html lang="ja">
+   <head>
+     <meta charset="utf-8">
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+      <link rel="stylesheet" href="style.css">
+      <title>電卓</title>
+    </head>
+      
+<body>
+ <h3>WEB電卓</h3>
+ 
+<form name="myForm">
+ <table>
+  <tr>
+    <td colspan="4"><input type="text" class="displpy"  id="myLine" value="0" disabled></td>
+  </tr>
+
+   <tr>
+    <td><input type="button" class="button_color" value="7" onclick="myValue(7)"></td>
+    <td><input type="button" class="button_color" value="8" onclick="myValue(8)"></td>
+    <td><input type="button" class="button_color" value="9" onclick="myValue(9)"></td>
+    <td><input type="button" class="button_color" value="+" onclick="myCalculate('+')"></td>
+   </tr>
+
+    <tr>
+     <td><input type="button" class="button_color" value="4" onclick="myValue(4)"></td>
+     <td><input type="button" class="button_color" value="5" onclick="myValue(5)"></td>
+     <td><input type="button" class="button_color" value="6" onclick="myValue(6)"></td>
+     <td><input type="button" class="button_color" value="-" onclick="myCalculate('-')"></td>
+    </tr>
+ 
+     <tr>
+      <td><input type="button" class="button_color" value="1" onclick="myValue(1)"></td>
+      <td><input type="button" class="button_color" value="2" onclick="myValue(2)"></td>
+      <td><input type="button" class="button_color" value="3" onclick="myValue(3)"></td>
+      <td><input type="button" class="button_color" value="*" onclick="myCalculate('*')"></td>
+     </tr>
+
+     <tr>
+      <td><input type="button" class="button_color" value="0" onclick="myValue(0)"></td>
+      <td><input type="button" class="button_color" value="00" onclick="myValue(00)"></td>
+      <td><input type="button" class="button_color" value="." onclick="myValue('.')"></td>
+      <td><input type="button" class="button_color" value="/" onclick="myCalculate('/')"></td>
+     </tr>
+     
+     <tr>
+      <td colspan = "2">
+        <input type="button" class="lastbutton button_color" value="=" onclick="myCalculate('=')"></td>
+      <td colspan = "2">
+        <input type="button" class="lastbutton button_color" value="AC" onclick="myC()"></td>
+     </tr>
+    </table>
+   </form>
+   <script src="main.js"></script>
+  </body>
+ </html>
